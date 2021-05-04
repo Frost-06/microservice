@@ -37,6 +37,5 @@ public class BillService {
 				orElseThrow(()->new RuntimeException(String.format("Cannot find name %s", name)));
 	}
 	public void deleteBill(String id) {
-		billrepository.deleteById(id);
 	}
 }
